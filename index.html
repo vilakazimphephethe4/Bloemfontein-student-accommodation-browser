@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Student Accommodation Browsing | Compare Student Housing in Bloemfontein
+    </title>
+    <meta
+      name="description"
+      content="Browse, compare and book student accommodation in Bloemfontein, all in one place." />
+    <meta name="theme-color" content="#004aad" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Navbar -->
+    <header>
+      <a class="logo" href="#home">Student Accommodation Browsing</a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-controls="navbar"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#accommodations">Accommodations</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-cta" href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Home / Hero -->
+      <section class="home" id="home">
+        <div>
+          <h1>Welcome to Student Accommodation Browsing</h1>
+          <h2>Find Your Perfect Student Home</h2>
+          <p>
+            Browse, compare and book student accommodation, all in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="booking.html">Book Now</a>
+            <a class="btn btn-outline" href="#accommodations"
+              >View Accommodations</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Accommodations -->
+      <section class="properties section" id="accommodations">
+        <h2 class="section-title reveal">Accommodations</h2>
+        <div class="property-grid">
+          <article class="property reveal">
+            <a href="rhule.html">
+              <img
+                src="Westderne-images/Complex.jpg"
+                alt="Westdene student accommodation complex"
+                width="800"
+                height="450"
+                loading="lazy" />
+            </a>
+            <div class="property-body">
+              <h3>Rhule Accommodation</h3>
+              <p>
+                Affordable rooms with shared facilities and great amenities.
+              </p>
+              <ul class="property-meta">
+                <li>From R4 749 / month</li>
+                <li>Area: Westdene</li>
+                <li>
+                  Includes: WI-FI, Study Area, Prepaid Electricity and Water,
+                  Laundry, Secure Packing
+                </li>
+              </ul>
+              <div class="property-actions">
+                <a class="btn btn-small btn-outline-dark" href="rhule.html"
+                  >View gallery</a
+                >
+                <a
+                  class="btn btn-small btn-primary"
+                  href="booking.html?property=Rhule"
+                  >Book this</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="property reveal">
+            <a href="studentsa.html">
+              <img
+                src="Willows-images/property_view.jpg"
+                alt="Navalsig student accommodation"
+                width="800"
+                height="450"
+                loading="lazy" />
+            </a>
+            <div class="property-body">
+              <h3>My Student SA</h3>
+              <p>Quiet, secure living close to CUT & UFS campuses.</p>
+              <ul class="property-meta">
+                <li>From R5 200 / month</li>
+                <li>Area: Willows</li>
+                <li>
+                  Includes: WI-FI, Prepaid Electricity and Water, Laundry,
+                  Computer Lab, Entertainment Room, Shuttle
+                </li>
+              </ul>
+              <div class="property-actions">
+                <a class="btn btn-small btn-outline-dark" href="studentsa.html"
+                  >View gallery</a
+                >
+                <a
+                  class="btn btn-small btn-primary"
+                  href="booking.html?property=My-Student-SA"
+                  >Book this</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="property reveal">
+            <a href="central.html">
+              <img
+                src="#"
+                alt="Bloemfontein Central student accommodation"
+                width="800"
+                height="450"
+                loading="lazy" />
+            </a>
+            <div class="property-body">
+              <h3>Bloemfontein Central</h3>
+              <p>
+                Walk to shops, transport and the city centre from your front
+                door.
+              </p>
+              <ul class="property-meta">
+                <li>From R4 100 / month</li>
+                <li>Area: Central</li>
+                <li>Includes: WI-FI, laundry, 24-hour security</li>
+              </ul>
+              <div class="property-actions">
+                <a class="btn btn-small btn-outline-dark" href="central.html"
+                  >View gallery</a
+                >
+                <a
+                  class="btn btn-small btn-primary"
+                  href="booking.html?property=Bloemfontein-central"
+                  >Book this</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="services section" id="how-it-works">
+        <h2 class="section-title reveal">How It Works</h2>
+        <div class="service-cards">
+          <div class="service reveal">
+            <div class="service-icon" aria-hidden="true">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3>1. Browse</h3>
+            <p>
+              Explore student accommodations with photos, prices and what is
+              included, all in one place.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-icon" aria-hidden="true">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3>2. Compare</h3>
+            <p>
+              Compare areas, monthly costs and facilities so you can choose the
+              place that suits your budget and studies.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-icon" aria-hidden="true">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>3. Book</h3>
+            <p>
+              Send a booking request with your move-in date and lease length in
+              a few clicks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section-title reveal">About Us</h2>
+        <p class="reveal">
+          Student Accommodation Browsing helps students discover, compare and
+          book student housing in one place. Every listing shows photos, prices
+          and what is included, so you can decide with confidence.
+        </p>
+        <img
+          class="reveal"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+          alt="Students studying together"
+          width="1200"
+          height="800"
+          loading="lazy" />
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>
+              32 Nelson Mandela Dr, Central Bloemfontein, Bloemfontein, 9301
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+27794248220"> Phone </a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <a
+              href="https://wa.me/27794248220"
+              target="_blank"
+              rel="noopener noreferrer">
+              Whatsapp
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:siyabongavilakazi698@gmail.com">Email Us</a>
+          </li>
+        </ul>
+
+        <div class="map-container">
+          <h3>Our Office</h3>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27774.799444934564!2d26.198015987141034!3d-29.12147126964511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fc56917e5fb1b%3A0x8137a64dfa958003!2sSAPS%20Park%20Road%20Police%20Station!5e1!3m2!1sen!2sza!4v1792164156802!5m2!1sen!2sza"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <button id="backToTop" type="button" aria-label="Back to top">↑</button>
+    <footer>
+      <p>
+        &copy; <span data-year>2026</span> Student Accommodation Browsing.
+        Portfolio project.
+      </p>
+      <div class="social-icons">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

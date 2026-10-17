@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhule Accommodation Gallery</title>
+    <meta
+      name="description"
+      content="Photo gallery of the Rhule student accommodation: rooms, study room, laundry, braai area and more." />
+    <meta name="theme-color" content="#004aad" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="header-simple">
+      <a class="logo" href="index.html">Rhule Accommodation</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#accommodations">Accommodations</a></li>
+          <li>
+            <a class="nav-cta" href="booking.html?property=Rhule"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="page-hero">
+        <h1>Rhule Accommodation Gallery</h1>
+        <p>Tap any photo to view it full size.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="booking.html?property=Rhule"
+            >Book Rhule</a
+          >
+        </div>
+      </div>
+
+      <a class="back-link" href="index.html#accommodations"
+        >Back to Accommodations</a
+      >
+
+      <div class="gallery">
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Complex.jpg"
+            alt="Complex"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Entrence.jpg"
+            alt="Entrance"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Chillers.jpg"
+            alt="Chillers"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Braai Place.jpg"
+            alt="Braai place"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Back-of Complex.jpg"
+            alt="Back of complex"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Packing Lort.jpg"
+            alt="Parking lot"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Room1.jpg"
+            alt="Student room"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Study-Room.jpg"
+            alt="Study room"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Laundry room.jpg"
+            alt="Laundry room"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+        <button class="gallery-item" type="button">
+          <img
+            class="gal-images"
+            src="Westderne-images/Washing Lines.jpg"
+            alt="Washing lines"
+            width="600"
+            height="400"
+            loading="lazy" />
+        </button>
+      </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer">
+      <button class="lb-btn lb-close" type="button" aria-label="Close">
+        &times;
+      </button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">
+        &#10094;
+      </button>
+      <button class="lb-btn lb-next" type="button" aria-label="Next photo">
+        &#10095;
+      </button>
+      <img class="lightbox-content" id="lightbox-img" alt="" />
+      <div id="caption" class="caption" aria-live="polite"></div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; <span data-year>2026</span> Student Accommodation Browsing.
+        Portfolio project.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
